@@ -14,7 +14,7 @@ Threshold = 5
 if System_Data < Threshold:
     print("Available storage space is high")
 else:
-    print("Available storage space is low”)
+    print("Available storage space is low")
     file1 = open('security.log', 'a')
     alert = 'Available storage space is low '
     today = date.today()
@@ -39,12 +39,12 @@ print(Memory_utilization)
 
 if Memory_utilization > 0.01:
 	print("Memory Utilization is high")
-    file1 = open('security.log', 'a')
-    alert = 'Memory Utilization is high '
-    today = date.today()
-    str_date = str(today) + '\n'
-    file1.write(alert)
-    file1.write(str_date)
-    file1.close()
+ 	file1 = open('security.log', 'a')
+  	alert = 'Memory Utilization is high '
+	today = date.today()
+	str_date = str(today) + '\n'
+	file1.write(alert)
+	file1.write(str_date)
+	file1.close()
 else:
-	print("Memory Utilization is low”)
+	print("Memory Utilization is low")
